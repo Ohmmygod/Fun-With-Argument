@@ -1,6 +1,6 @@
 int	fn_strlen(char *str);
 
-void	*reverse_string(char *str)
+char	*reverse_string(char *str)
 {
 	int	len;
 	int	i;
@@ -15,4 +15,5 @@ void	*reverse_string(char *str)
 		str[len - 1 - i] = temp;
 		i++;
 	}
+	return (str);
 }
